@@ -5,7 +5,9 @@ C++ utilities for random stuff
 
 ## Licensing
 
-These utilities are licensed under CC-BY 4.0.
+ALL of these utilities are licensed under CC-BY 4.0.
+
+More information here: https://creativecommons.org/licenses/by/4.0/
 
 ## Current Utilities
 
