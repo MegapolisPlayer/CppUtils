@@ -3,6 +3,10 @@
 # CppUtils
 C++ utilities for random stuff
 
+## Usage
+Most of these utilities require at least C++11. Sometimes very basic headers (`<iostream>`, `<string>`) are required.
+To use them just copy-paste it into your project and change it up a bit if it doesn't suit your needs. For `.cpp` files - you can just rename them to `.h` files, it wont affect anything.
+
 ## Licensing
 
 ALL of these utilities are licensed under CC-BY 4.0.
