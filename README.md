@@ -19,6 +19,8 @@ BoolUtils - utilities for booleans
 
 SuperExit - utilities for exit function abstractions
 
+Vectors - Vec2, Vec3 and Vec4
+
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
