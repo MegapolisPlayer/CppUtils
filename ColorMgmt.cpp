@@ -1,7 +1,5 @@
-//C++ Utilities
-//ColorMgmt - cross-platofrm utility for terminal color
-//(c) MegapolisPlayer 2022
-//CC-BY 4.0
+//CppUtils/ColorMgmt - cross-platofrm utility for terminal color
+//CppUtils/ColorMgmt.cpp © 2022 by MegapolisPlayer is licensed under CC BY 4.0 
 
 namespace CppUtils {
 #ifdef _WIN32
