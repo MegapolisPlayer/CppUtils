@@ -31,7 +31,7 @@ namespace CppUtilsMacros {
 	#define CANERR [[nodiscard]] ERRVAL
 	
 	typedef const char* RawStr;
-	typedef char* 		ModRawStr;
+	typedef char*       ModRawStr;
 }
 
 #ifdef MP_CPPUTILS_SIMPLIFY
