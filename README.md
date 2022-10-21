@@ -11,15 +11,15 @@ More information here: https://creativecommons.org/licenses/by/4.0/
 
 ## Current Utilities
 
-SimpleMacros - macros and typedefs for simplification and readability
+SimpleMacros.h - macros and typedefs for simplification and readability
 
-ColorMgmt - cross platform terminal colors, scoped color
+ColorMgmt.cpp - cross platform terminal colors, scoped color
 
-BoolUtils - utilities for booleans
+BoolUtils.cpp - utilities for booleans
 
-SuperExit - utilities for exit function abstractions
+SuperExit.cpp - utilities for exit function abstractions
 
-Vectors - Vec2, Vec3 and Vec4
+Vectors.h - Vec2, Vec3 and Vec4
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
