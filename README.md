@@ -11,6 +11,8 @@ More information here: https://creativecommons.org/licenses/by/4.0/
 
 ## Current Utilities
 
+SimpleMacros - macros and typedefs for simplification and readability
+
 ColorMgmt - cross platform terminal colors, scoped color
 
 BoolUtils - utilities for booleans
