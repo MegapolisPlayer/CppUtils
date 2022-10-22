@@ -13,6 +13,12 @@ ALL of these utilities are licensed under CC-BY 4.0.
 
 More information here: https://creativecommons.org/licenses/by/4.0/
 
+## Contributing
+
+Feel free to contribute to the main branch if you are creating a new utility. If you are updating an already exsiting utility, if it is a small update (typo) or if it is your own utility - contrib to the main branch. If it is a large change in someone else's utility, please begin a pull request.
+
+Please do not create copies of other utilities with the same functionality.
+
 ## Current Utilities
 
 SimpleMacros.h - macros and typedefs for simplification and readability
