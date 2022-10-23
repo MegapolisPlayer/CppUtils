@@ -31,6 +31,8 @@ SuperExit.cpp - utilities for exit function abstractions
 
 Vectors.h - Vec2, Vec3 and Vec4
 
+StringArrayCompare.cpp - comparisons for const char** and std::string* arrays 
+
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
