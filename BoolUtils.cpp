@@ -6,7 +6,7 @@ namespace CppUtils {
 		if(*aBool == true) { *aBool = false; }
 		else { *aBool = true; }
 	}
-  enum struct BoolToTextMode {
+	enum struct BoolToTextMode {
 		LOWERCASE = 0, //all lowercase
 		FLCAPITAL,	   //first letter capital
 		CAPITAL		   //all capital
