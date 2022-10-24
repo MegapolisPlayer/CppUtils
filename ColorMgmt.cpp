@@ -1,4 +1,4 @@
-//CppUtils/ColorMgmt - cross-platofrm utility for terminal color
+//CppUtils/ColorMgmt - cross-platform utility for terminal color
 //CppUtils/ColorMgmt.cpp © 2022 by MegapolisPlayer is licensed under CC BY 4.0 
 
 namespace CppUtils {
