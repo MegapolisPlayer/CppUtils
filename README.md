@@ -33,7 +33,7 @@ Vectors.h - Vec2, Vec3 and Vec4
 
 Integer.cpp - Min, Max, IsBetween and other integer-related utils
 
-StringArrayCompare.cpp - comparisons for const char** and std::string* arrays 
+StringUtils.cpp - comparisons for const char** and std::string* arrays 
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
