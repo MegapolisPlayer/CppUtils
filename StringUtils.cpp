@@ -23,6 +23,14 @@ namespace CppUtils {
 		}
 		return false;
 	}
+	bool ContainsMultiple(const char* aString, const char* aChars, const uint64_t aCharsAmount) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			for(uint64_t lId2 = 0; lId2 < aCharsAmount; lId2++) {
+				if(aString[lId] == aChars[lId2]) { return true; }
+			}
+		}
+		return false;
+	}
 	
 	bool StringCompare(const char* const aString1, const char* const aString2) {
 		uint64_t lString1Len = StringLength(aString1);
