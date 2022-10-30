@@ -6,6 +6,12 @@ namespace CppUtils {
 		uint64_t lId = 0;
 		while (aString[lId] != '\0') { lId++; }
 		return lId;
+	}
+	bool IsNumber(const char* aString) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if((aString[lId] < 48) || (aString[lId] > 57)) { return false; }
+		}
+		return true;
 	}	
 	bool StringCompare(const char* const aString1, const char* const aString2) {
 		uint64_t lString1Len = StringLength(aString1);
