@@ -1,6 +1,8 @@
 //CppUtils/StringUtils - utilities for strings
 //CppUtils/StringUtils.cpp © 2022 by MegapolisPlayer is licensed under CC BY 4.0 
 
+#define CPP_UTILS_STRING
+
 namespace CppUtils {
 	uint64_t StringLength(const char* const aString) {
 		uint64_t lId = 0;
