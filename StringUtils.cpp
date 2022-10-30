@@ -9,12 +9,21 @@ namespace CppUtils {
 		while (aString[lId] != '\0') { lId++; }
 		return lId;
 	}
+	
 	bool IsNumber(const char* aString) {
 		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
 			if((aString[lId] < 48) || (aString[lId] > 57)) { return false; }
 		}
 		return true;
-	}	
+	}
+	
+	bool Contains(const char* aString, const char aChar) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if(aString[lId] == aChar) { return true; }
+		}
+		return false;
+	}
+	
 	bool StringCompare(const char* const aString1, const char* const aString2) {
 		uint64_t lString1Len = StringLength(aString1);
 		uint64_t lString2Len = StringLength(aString2);
@@ -24,10 +33,19 @@ namespace CppUtils {
 		}
 		return true;
 	}
+	
 	bool IsStringInArray(const char** aArray, const uint64_t aArrayAmount, const char* aString) {
 		for(uint64_t lId = 0; lId < aArrayAmount; lId++) {
 			if(StringCompare(aArray[lId], aString)) { return true; }
 		}
 		return false;
+	}
+	
+	uint64_t AmountOccurences(const char* aString, const char aChar) {
+		uint64_t lCount = 0;
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if(aString[lId] == aChar) { lCount++; }
+		}
+		return lCount;
 	}
 }
