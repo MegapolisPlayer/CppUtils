@@ -35,7 +35,12 @@ namespace CppUtils {
 		}
 		return false;
 	}
-	
+	bool IsOneOf(const char aChar, const char* aChars, const uint64_t aCharsAmount) {
+		for(uint64_t lId = 0; lId < aCharsAmount; lId++) {
+			if(aChar == aChars[lId]) { return true; }
+		}
+		return false;
+	}
 	bool StringCompare(const char* const aString1, const char* const aString2) {
 		uint64_t lString1Len = StringLength(aString1);
 		uint64_t lString2Len = StringLength(aString2);
