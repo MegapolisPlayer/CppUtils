@@ -10,6 +10,10 @@ namespace CppUtils {
 		return lId;
 	}
 	
+	bool IsNumber(char aChar) {
+		if((aChar < 48) || (aChar > 57)) { return false; }
+		return true;
+	}
 	bool IsNumber(const char* aString) {
 		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
 			if((aString[lId] < 48) || (aString[lId] > 57)) { return false; }
