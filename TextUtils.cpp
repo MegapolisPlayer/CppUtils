@@ -1,5 +1,5 @@
-//CppUtils/StringUtils - utilities for strings
-//CppUtils/StringUtils.cpp © 2022 by MegapolisPlayer is licensed under CC BY 4.0 
+//CppUtils/TextUtils - utilities for chars and c-strings
+//CppUtils/TextUtils.cpp © 2022 by MegapolisPlayer is licensed under CC BY 4.0 
 
 #define CPP_UTILS_STRING
 
