@@ -21,6 +21,21 @@ namespace CppUtils {
 		return true;
 	}
 	
+	bool IsMathExpression(const char aChar) {
+		if(aChar != '+' && aChar != '-' && aChar != '*' && aChar != '/' && aChar != '%') {
+			if((aChar < 48) || (aChar > 57)) { return false; }
+		}
+		return true;
+	}
+	bool IsMathExpression(const char* aString) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if(aString[lId] != '+' && aString[lId] != '-' && aString[lId] != '*' && aString[lId] != '/' && aString[lId] != '%') {
+				if((aString[lId] < 48) || (aString[lId] > 57)) { return false; }
+			}
+		}
+		return true;
+	}
+	
 	bool Contains(const char* aString, const char aChar) {
 		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
 			if(aString[lId] == aChar) { return true; }
