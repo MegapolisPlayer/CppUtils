@@ -10,9 +10,15 @@ namespace CppUtils {
 		return lId;
 	}
 	
-	bool IsNumber(char aChar) {
-		if((aChar < 48) || (aChar > 57)) { return false; }
+	bool IsNumber(const char aChar) {
+		if(aChar < 48 || aChar > 57) { return false; }
 		return true;
+	}	
+	bool IsLower(const char aChar) {
+		if(aChar < 97 || aChar > 122) { return false; } return true;
+	}
+	bool IsCapital(const char aChar) {
+		if(aChar < 65 || aChar > 90) { return false; } return true;
 	}
 	bool IsNumber(const char* aString) {
 		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
@@ -79,5 +85,13 @@ namespace CppUtils {
 			if(aString[lId] == aChar) { lCount++; }
 		}
 		return lCount;
+	}
+	void ToLower(char* aString) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if(IsCapital(aString[lId])) {
+				aString[lId] += 32; //relies on ascii, lower 128 letter always implemented
+			}
+			else { continue; }
+		}
 	}
 }
