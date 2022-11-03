@@ -4,7 +4,7 @@
 C++ utilities for random stuff
 
 ## Usage
-Most of these utilities require at least C++11. Sometimes very basic headers (`<iostream>`, `<string>`) are required.
+Most of these utilities require at least C++11. Sometimes very basic headers (`<iostream>`, `<string>`) are required, however the aim is to use as little libraries as possible.
 To use them just copy-paste it into your project and change it up a bit if it doesn't suit your needs. For `.cpp` files - you can just rename them to `.h` files, it wont affect anything.
 
 ## Licensing
