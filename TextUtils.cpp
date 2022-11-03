@@ -14,17 +14,43 @@ namespace CppUtils {
 		if(aChar < 48 || aChar > 57) { return false; }
 		return true;
 	}	
-	bool IsLower(const char aChar) {
-		if(aChar < 97 || aChar > 122) { return false; } return true;
-	}
-	bool IsCapital(const char aChar) {
-		if(aChar < 65 || aChar > 90) { return false; } return true;
-	}
 	bool IsNumber(const char* aString) {
 		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
 			if((aString[lId] < 48) || (aString[lId] > 57)) { return false; }
 		}
 		return true;
+	}
+	
+	bool IsLower(const char aChar) {
+		if(aChar < 97 || aChar > 122) { return false; } return true;
+	}
+	bool IsUpper(const char aChar) {
+		if(aChar < 65 || aChar > 90) { return false; } return true;
+	}
+	
+	char ToLower(const char aChar) {
+		if(IsCapital(aChar)) { return aChar + 32; } //relies on ascii, lower 128 letter always implemented
+		else { return aChar; }
+	}
+	void ToLower(char* aString) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if(IsCapital(aString[lId])) {
+				aString[lId] += 32;
+			}
+			else { continue; }
+		}
+	}	
+	char ToUpper(const char aChar) {
+		if(IsLower(aChar)) { return aChar - 32; }
+		else { return aChar; }
+	}
+	void ToUpper(char* aString) {
+		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
+			if(IsLower(aString[lId])) {
+				aString[lId] -= 32;
+			}
+			else { continue; }
+		}
 	}
 	
 	bool IsMathExpression(const char aChar) {
@@ -85,13 +111,5 @@ namespace CppUtils {
 			if(aString[lId] == aChar) { lCount++; }
 		}
 		return lCount;
-	}
-	void ToLower(char* aString) {
-		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
-			if(IsCapital(aString[lId])) {
-				aString[lId] += 32; //relies on ascii, lower 128 letter always implemented
-			}
-			else { continue; }
-		}
 	}
 }
