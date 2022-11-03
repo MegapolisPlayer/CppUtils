@@ -47,9 +47,9 @@ namespace CppUtils {
 		}
 		//checks for false
 		if(aString[0] == 'f' || aString[0] == 'F') {
-			if(aString[1] != 'r' && aString[1] != 'R') { return -1; }
-			if(aString[2] != 'u' && aString[2] != 'U') { return -1; }
-			if(aString[3] != 'e' && aString[3] != 'E') { return -1; }
+			if(aString[1] != 'a' && aString[1] != 'A') { return -1; }
+			if(aString[2] != 'l' && aString[2] != 'L') { return -1; }
+			if(aString[3] != 's' && aString[3] != 'S') { return -1; }
 			if(aString[4] != 'e' && aString[4] != 'E') { return -1; }
 			return false;
 		}
