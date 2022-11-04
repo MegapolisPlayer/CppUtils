@@ -98,7 +98,7 @@ namespace CppUtils {
 		return true;
 	}
 	
-	bool IsStringInArray(const char** aArray, const uint64_t aArrayAmount, const char* aString) {
+	bool IsStringInArray(const char* aString, const char** aArray, const uint64_t aArrayAmount) {
 		for(uint64_t lId = 0; lId < aArrayAmount; lId++) {
 			if(StringCompare(aArray[lId], aString)) { return true; }
 		}
