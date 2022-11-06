@@ -29,12 +29,12 @@ namespace CppUtils {
 	}
 	
 	char ToLower(const char aChar) {
-		if(IsCapital(aChar)) { return aChar + 32; } //relies on ascii, lower 128 letter always implemented
+		if(IsUpper(aChar)) { return aChar + 32; } //relies on ascii, lower 128 letter always implemented
 		else { return aChar; }
 	}
 	void ToLower(char* aString) {
 		for(uint64_t lId = 0; lId < StringLength(aString); lId++) {
-			if(IsCapital(aString[lId])) {
+			if(IsUpper(aString[lId])) {
 				aString[lId] += 32;
 			}
 			else { continue; }
