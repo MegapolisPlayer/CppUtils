@@ -66,7 +66,7 @@ namespace CppUtils {
 	}
 	void ResetColor() {
 #ifdef _WIN32
-		HANDLE lHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+		HANDLE lHandle = GetStdHandle(STD_OUTPUT_HANDLE); //just assume no personalization is done
 		SetConsoleTextAttribute(lHandle, 7);
 #endif
 #ifdef __linux
