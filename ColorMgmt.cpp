@@ -45,7 +45,7 @@ namespace CppUtils {
 	};
 #endif
 	void SetColor(const Color aForeground, const Color aBackground = COLOR_DEFAULT) {
-#ifdef WIN32
+#ifdef _WIN32
 		HANDLE lHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 		if(aForeground == COLOR_DEFAULT) { SetConsoleTextAttribute(lHandle, 7); }
 		else { SetConsoleTextAttribute(lHandle, (aBackground * 16) + aForeground); }
@@ -65,7 +65,7 @@ namespace CppUtils {
 #endif
 	}
 	void ResetColor() {
-#ifdef WIN32
+#ifdef _WIN32
 		HANDLE lHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 		SetConsoleTextAttribute(lHandle, 7);
 #endif
